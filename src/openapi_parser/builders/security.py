@@ -26,6 +26,7 @@ class SecurityBuilder:
             "bearer_format": PropertyMeta(name="bearerFormat", cast=None),
             "url": PropertyMeta(name="openIdConnectUrl", cast=None),
             "flows": PropertyMeta(name="flows", cast=self.oauth_flow_builder.build_collection),
+            "x_value": PropertyMeta(name="x-value", cast=None),
         }
 
         attrs = extract_typed_props(data, attrs_map)

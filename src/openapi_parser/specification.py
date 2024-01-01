@@ -212,7 +212,7 @@ class Security:
     bearer_format: Optional[str] = None
     flows: dict[OAuthFlowType, OAuthFlow] = field(default_factory=dict)
     url: Optional[str] = None
-
+    x_value: Optional[str] = None
 
 @dataclass
 class Operation:
